@@ -1,21 +1,21 @@
 # Mars Rover 
-The Mars rover is controlled by sending it a stream of command and it will react according to the received commands in sequence. <br />
+The Mars rover is controlled by sending it a stream of commands. It reacts according to the received commands in sequence. <br />
 One command is represented by 1 character. <br />
-Stream of command is presented by array of character.
+Stream of commands is presented by an array of character.
 
-###Table of commands:
+### Table of commands:
 * f – Move forward 1 coordinate in the current direction
 * b – Move backward 1 coordinate in the current direction
 * r – Rotate 90 degree clock-wise from current direction
 * l – Rotate 90 degree anti clock-wise from current direction
 
- ###Implementation
+ ### Implementation
  The program is designed to handle multiple rovers through CLI. <br/>
  The arguments passed will be in the format "X-coordinate, Y-coordinate, Dir" "<stream of comands>" "X-coordinate, Y-coordinate, Dir" "<stream of comands>" ...
  <br /> The way program works is
  1.  Each rover gets a turn to execute a command.
- 2.  Before executing command, it's checked for collision.
- 3.  If collision can occur then rover will not proceed and all the commands will be cancelled for that rover.
+ 2.  Before executing command, it is checked for collision.
+ 3.  If collision occurs then rover will not proceed and all the commands will be cancelled for that rover.
  4.  We will continue with other rovers and keep on executing steps 2 -3 or until commands are finished for the rover.
 
 
